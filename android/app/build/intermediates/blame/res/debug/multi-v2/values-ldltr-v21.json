@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/martimfj/Dropbox/Insper Mileage/car-dashboard/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ldltr-v21/values-ldltr-v21.xml",
+            "map": [
+                {
+                    "source": "/home/martimfj/.gradle/caches/transforms-2/files-2.1/477d5c0fad957d62d58a11601eb3ce6d/res/values-ldltr-v21/values-ldltr-v21.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "112",
+                        "endOffsets": "163"
+                    }
+                }
+            ]
+        }
+    ]
+}

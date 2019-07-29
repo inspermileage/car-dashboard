@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/martimfj/Dropbox/Insper Mileage/car-dashboard/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-watch-v20/values-watch-v20.xml",
+            "map": [
+                {
+                    "source": "/home/martimfj/.gradle/caches/transforms-2/files-2.1/477d5c0fad957d62d58a11601eb3ce6d/res/values-watch-v20/values-watch-v20.xml",
+                    "from": {
+                        "startLines": "2,5,8",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,214,385",
+                        "endLines": "4,7,10",
+                        "endColumns": "12,12,12",
+                        "endOffsets": "209,380,553"
+                    }
+                }
+            ]
+        }
+    ]
+}
