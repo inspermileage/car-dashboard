@@ -78,7 +78,7 @@ export default class Dashboard extends Component {
 
 			this.setState({ data: this.parsedToJSON(parsed) });
 		}
-		console.log(this.state.data);
+		// console.log(this.state.data);
 		// console.log('Payload Parsed and Jsonify: ', this.parsedToJSON(parsed));
 	}
 
@@ -146,14 +146,10 @@ export default class Dashboard extends Component {
 		return (
 			<View style={styles.container}>
 				<Text style={styles.paragraph}>
-					Connection:{' '}
-					{this.state.connected ? 'Connected' : 'Not Connected'}
-				</Text>
-
-				<Text style={styles.paragraph}>
-					{this.state.output === ''
-						? 'No Content'
-						: this.state.output}
+					Velocidade:{' '}
+					{this.state.data.accelerometer === ''
+						? 'No Data'
+						: this.state.data.accelerometer}
 				</Text>
 			</View>
 		);
