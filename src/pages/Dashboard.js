@@ -13,7 +13,7 @@ export default class Dashboard extends Component {
 		serviceStarted: false,
 		connected: false,
 		usbAttached: false,
-		output: ''
+		data: ''
 	};
 
 	onUsbAttached() {
@@ -47,9 +47,33 @@ export default class Dashboard extends Component {
 		alert('Code: ' + error.errorCode + ' Message: ' + error.errorMessage);
 	}
 
+	parsedToJSON = data => {
+		const dataSet = [
+			'button',
+			'accelerometer',
+			'altimeter',
+			'barometer',
+			'temperature',
+			'rpm',
+			'voltage',
+			'current'
+		];
+
+		return Object.assign(
+			{},
+			...dataSet.map((n, index) => ({ [n]: data[index] }))
+		);
+	};
+
 	onReadData(data) {
 		const payload = RNSerialport.hexToUtf16(data.payload);
-		this.setState({ output: payload });
+
+		var parsed = payload
+			.match('<([^>]+)>')
+			.split(',')
+			.map(Number);
+
+		this.setState({ output: this.parsedToJSON(parsed) });
 	}
 
 	componentDidMount() {
@@ -115,12 +139,10 @@ export default class Dashboard extends Component {
 		console.disableYellowBox = true;
 		return (
 			<View style={styles.container}>
-				<View>
-					<Text>Connection:</Text>
-					<Text>
-						{this.state.connected ? 'Connected' : 'Not Connected'}
-					</Text>
-				</View>
+				<Text style={styles.paragraph}>
+					Connection:{' '}
+					{this.state.connected ? 'Connected' : 'Not Connected'}
+				</Text>
 
 				<Text style={styles.paragraph}>
 					{this.state.output === ''
