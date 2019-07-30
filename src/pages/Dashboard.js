@@ -13,7 +13,7 @@ export default class Dashboard extends Component {
 		serviceStarted: false,
 		connected: false,
 		usbAttached: false,
-		data: ''
+		data: {}
 	};
 
 	onUsbAttached() {
@@ -36,11 +36,11 @@ export default class Dashboard extends Component {
 
 	onConnectedDevice() {
 		this.setState({ connected: true });
-		alert('Device Connected');
+		// alert('Device Connected');
 	}
 	onDisconnectedDevice() {
 		this.setState({ connected: false });
-		alert('Device Disconnected');
+		// alert('Device Disconnected');
 	}
 
 	onError(error) {
@@ -67,13 +67,19 @@ export default class Dashboard extends Component {
 
 	onReadData(data) {
 		const payload = RNSerialport.hexToUtf16(data.payload);
+		var re = new RegExp('<([^>]+)>');
+		var parsed = '';
 
-		var parsed = payload
-			.match('<([^>]+)>')
-			.split(',')
-			.map(Number);
+		if (re.test(payload)) {
+			var parsed = payload
+				.match(re)[1]
+				.split(',')
+				.map(Number);
 
-		this.setState({ output: this.parsedToJSON(parsed) });
+			this.setState({ data: this.parsedToJSON(parsed) });
+		}
+		console.log(this.state.data);
+		// console.log('Payload Parsed and Jsonify: ', this.parsedToJSON(parsed));
 	}
 
 	componentDidMount() {
