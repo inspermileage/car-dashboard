@@ -1,6 +1,13 @@
 import React, { Component } from 'react';
+import api from '../services/api';
 
-import { StyleSheet, Text, View, DeviceEventEmitter } from 'react-native';
+import {
+	StatusBar,
+	StyleSheet,
+	Text,
+	View,
+	DeviceEventEmitter
+} from 'react-native';
 
 import { RNSerialport, definitions, actions } from 'react-native-serialport';
 
@@ -13,7 +20,8 @@ export default class Dashboard extends Component {
 		serviceStarted: false,
 		connected: false,
 		usbAttached: false,
-		data: {}
+		data: {},
+		dataset: '5d14edc09e9b5e589c5c0e3d'
 	};
 
 	onUsbAttached() {
@@ -65,7 +73,7 @@ export default class Dashboard extends Component {
 		);
 	};
 
-	onReadData(data) {
+	async onReadData(data) {
 		const payload = RNSerialport.hexToUtf16(data.payload);
 		var re = new RegExp('<([^>]+)>');
 		var parsed = '';
@@ -77,12 +85,14 @@ export default class Dashboard extends Component {
 				.map(Number);
 
 			this.setState({ data: this.parsedToJSON(parsed) });
+
+			const dataset = this.state.dataset;
+			await api.post(`/data/${dataset}`, this.state.data);
 		}
-		// console.log(this.state.data);
-		// console.log('Payload Parsed and Jsonify: ', this.parsedToJSON(parsed));
 	}
 
 	componentDidMount() {
+		StatusBar.setHidden(true);
 		DeviceEventEmitter.addListener(
 			actions.ON_SERVICE_STARTED,
 			this.onServiceStarted,
@@ -146,10 +156,10 @@ export default class Dashboard extends Component {
 		return (
 			<View style={styles.container}>
 				<Text style={styles.paragraph}>
-					Velocidade:{' '}
-					{this.state.data.accelerometer === ''
-						? 'No Data'
-						: this.state.data.accelerometer}
+					{this.state.data.accelerometer === undefined
+						? '0'
+						: this.state.data.accelerometer}{' '}
+					Km/h
 				</Text>
 			</View>
 		);
@@ -159,14 +169,15 @@ export default class Dashboard extends Component {
 const styles = StyleSheet.create({
 	container: {
 		flex: 1,
+		backgroundColor: '#000000',
 		justifyContent: 'center',
-		backgroundColor: '#ecf0f1',
 		padding: 8
 	},
 	paragraph: {
 		margin: 24,
-		fontSize: 18,
+		fontSize: 48,
 		fontWeight: 'bold',
+		color: '#FFFFFF',
 		textAlign: 'center'
 	}
 });
