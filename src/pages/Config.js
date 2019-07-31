@@ -30,3 +30,5 @@ const styles = StyleSheet.create({
 		textAlign: 'center'
 	}
 });
+
+// https://stackoverflow.com/questions/50098376/pass-data-between-pages-in-react-native
