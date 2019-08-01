@@ -133,7 +133,7 @@
     },
     {
         "merged": "/home/martimfj/Dropbox/Insper Mileage/car-dashboard/android/app/build/intermediates/res/merged/debug/xml_rn_dev_preferences.xml.flat",
-        "source": "/home/martimfj/.gradle/caches/transforms-2/files-2.1/e1541b4f67a622f51199b37deb4dd86d/res/xml/rn_dev_preferences.xml"
+        "source": "/home/martimfj/.gradle/caches/transforms-2/files-2.1/a0f4e485d0e1b25d1f9efb4ea95ddeb4/res/xml/rn_dev_preferences.xml"
     },
     {
         "merged": "/home/martimfj/Dropbox/Insper Mileage/car-dashboard/android/app/build/intermediates/res/merged/debug/anim_abc_slide_in_bottom.xml.flat",
@@ -469,7 +469,7 @@
     },
     {
         "merged": "/home/martimfj/Dropbox/Insper Mileage/car-dashboard/android/app/build/intermediates/res/merged/debug/layout_dev_loading_view.xml.flat",
-        "source": "/home/martimfj/.gradle/caches/transforms-2/files-2.1/e1541b4f67a622f51199b37deb4dd86d/res/layout/dev_loading_view.xml"
+        "source": "/home/martimfj/.gradle/caches/transforms-2/files-2.1/a0f4e485d0e1b25d1f9efb4ea95ddeb4/res/layout/dev_loading_view.xml"
     },
     {
         "merged": "/home/martimfj/Dropbox/Insper Mileage/car-dashboard/android/app/build/intermediates/res/merged/debug/color-v23_abc_tint_edittext.xml.flat",
@@ -705,7 +705,7 @@
     },
     {
         "merged": "/home/martimfj/Dropbox/Insper Mileage/car-dashboard/android/app/build/intermediates/res/merged/debug/anim_catalyst_push_up_in.xml.flat",
-        "source": "/home/martimfj/.gradle/caches/transforms-2/files-2.1/e1541b4f67a622f51199b37deb4dd86d/res/anim/catalyst_push_up_in.xml"
+        "source": "/home/martimfj/.gradle/caches/transforms-2/files-2.1/a0f4e485d0e1b25d1f9efb4ea95ddeb4/res/anim/catalyst_push_up_in.xml"
     },
     {
         "merged": "/home/martimfj/Dropbox/Insper Mileage/car-dashboard/android/app/build/intermediates/res/merged/debug/layout_notification_template_part_chronometer.xml.flat",
@@ -717,7 +717,7 @@
     },
     {
         "merged": "/home/martimfj/Dropbox/Insper Mileage/car-dashboard/android/app/build/intermediates/res/merged/debug/anim_catalyst_fade_in.xml.flat",
-        "source": "/home/martimfj/.gradle/caches/transforms-2/files-2.1/e1541b4f67a622f51199b37deb4dd86d/res/anim/catalyst_fade_in.xml"
+        "source": "/home/martimfj/.gradle/caches/transforms-2/files-2.1/a0f4e485d0e1b25d1f9efb4ea95ddeb4/res/anim/catalyst_fade_in.xml"
     },
     {
         "merged": "/home/martimfj/Dropbox/Insper Mileage/car-dashboard/android/app/build/intermediates/res/merged/debug/drawable_abc_list_selector_holo_light.xml.flat",
@@ -833,7 +833,7 @@
     },
     {
         "merged": "/home/martimfj/Dropbox/Insper Mileage/car-dashboard/android/app/build/intermediates/res/merged/debug/layout_fps_view.xml.flat",
-        "source": "/home/martimfj/.gradle/caches/transforms-2/files-2.1/e1541b4f67a622f51199b37deb4dd86d/res/layout/fps_view.xml"
+        "source": "/home/martimfj/.gradle/caches/transforms-2/files-2.1/a0f4e485d0e1b25d1f9efb4ea95ddeb4/res/layout/fps_view.xml"
     },
     {
         "merged": "/home/martimfj/Dropbox/Insper Mileage/car-dashboard/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_popup_background_mtrl_mult.9.png.flat",
@@ -857,7 +857,7 @@
     },
     {
         "merged": "/home/martimfj/Dropbox/Insper Mileage/car-dashboard/android/app/build/intermediates/res/merged/debug/anim_catalyst_slide_up.xml.flat",
-        "source": "/home/martimfj/.gradle/caches/transforms-2/files-2.1/e1541b4f67a622f51199b37deb4dd86d/res/anim/catalyst_slide_up.xml"
+        "source": "/home/martimfj/.gradle/caches/transforms-2/files-2.1/a0f4e485d0e1b25d1f9efb4ea95ddeb4/res/anim/catalyst_slide_up.xml"
     },
     {
         "merged": "/home/martimfj/Dropbox/Insper Mileage/car-dashboard/android/app/build/intermediates/res/merged/debug/color-v23_abc_tint_seek_thumb.xml.flat",
@@ -977,7 +977,7 @@
     },
     {
         "merged": "/home/martimfj/Dropbox/Insper Mileage/car-dashboard/android/app/build/intermediates/res/merged/debug/layout_redbox_view.xml.flat",
-        "source": "/home/martimfj/.gradle/caches/transforms-2/files-2.1/e1541b4f67a622f51199b37deb4dd86d/res/layout/redbox_view.xml"
+        "source": "/home/martimfj/.gradle/caches/transforms-2/files-2.1/a0f4e485d0e1b25d1f9efb4ea95ddeb4/res/layout/redbox_view.xml"
     },
     {
         "merged": "/home/martimfj/Dropbox/Insper Mileage/car-dashboard/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat",
@@ -993,7 +993,7 @@
     },
     {
         "merged": "/home/martimfj/Dropbox/Insper Mileage/car-dashboard/android/app/build/intermediates/res/merged/debug/anim_catalyst_push_up_out.xml.flat",
-        "source": "/home/martimfj/.gradle/caches/transforms-2/files-2.1/e1541b4f67a622f51199b37deb4dd86d/res/anim/catalyst_push_up_out.xml"
+        "source": "/home/martimfj/.gradle/caches/transforms-2/files-2.1/a0f4e485d0e1b25d1f9efb4ea95ddeb4/res/anim/catalyst_push_up_out.xml"
     },
     {
         "merged": "/home/martimfj/Dropbox/Insper Mileage/car-dashboard/android/app/build/intermediates/res/merged/debug/layout_notification_template_part_time.xml.flat",
@@ -1213,7 +1213,7 @@
     },
     {
         "merged": "/home/martimfj/Dropbox/Insper Mileage/car-dashboard/android/app/build/intermediates/res/merged/debug/drawable_redbox_top_border_background.xml.flat",
-        "source": "/home/martimfj/.gradle/caches/transforms-2/files-2.1/e1541b4f67a622f51199b37deb4dd86d/res/drawable/redbox_top_border_background.xml"
+        "source": "/home/martimfj/.gradle/caches/transforms-2/files-2.1/a0f4e485d0e1b25d1f9efb4ea95ddeb4/res/drawable/redbox_top_border_background.xml"
     },
     {
         "merged": "/home/martimfj/Dropbox/Insper Mileage/car-dashboard/android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_scrubber_control_to_pressed_mtrl_000.png.flat",
@@ -1241,7 +1241,7 @@
     },
     {
         "merged": "/home/martimfj/Dropbox/Insper Mileage/car-dashboard/android/app/build/intermediates/res/merged/debug/layout_redbox_item_frame.xml.flat",
-        "source": "/home/martimfj/.gradle/caches/transforms-2/files-2.1/e1541b4f67a622f51199b37deb4dd86d/res/layout/redbox_item_frame.xml"
+        "source": "/home/martimfj/.gradle/caches/transforms-2/files-2.1/a0f4e485d0e1b25d1f9efb4ea95ddeb4/res/layout/redbox_item_frame.xml"
     },
     {
         "merged": "/home/martimfj/Dropbox/Insper Mileage/car-dashboard/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_list_focused_holo.9.png.flat",
@@ -1277,7 +1277,7 @@
     },
     {
         "merged": "/home/martimfj/Dropbox/Insper Mileage/car-dashboard/android/app/build/intermediates/res/merged/debug/anim_catalyst_fade_out.xml.flat",
-        "source": "/home/martimfj/.gradle/caches/transforms-2/files-2.1/e1541b4f67a622f51199b37deb4dd86d/res/anim/catalyst_fade_out.xml"
+        "source": "/home/martimfj/.gradle/caches/transforms-2/files-2.1/a0f4e485d0e1b25d1f9efb4ea95ddeb4/res/anim/catalyst_fade_out.xml"
     },
     {
         "merged": "/home/martimfj/Dropbox/Insper Mileage/car-dashboard/android/app/build/intermediates/res/merged/debug/drawable_abc_tab_indicator_material.xml.flat",
@@ -1289,7 +1289,7 @@
     },
     {
         "merged": "/home/martimfj/Dropbox/Insper Mileage/car-dashboard/android/app/build/intermediates/res/merged/debug/layout_redbox_item_title.xml.flat",
-        "source": "/home/martimfj/.gradle/caches/transforms-2/files-2.1/e1541b4f67a622f51199b37deb4dd86d/res/layout/redbox_item_title.xml"
+        "source": "/home/martimfj/.gradle/caches/transforms-2/files-2.1/a0f4e485d0e1b25d1f9efb4ea95ddeb4/res/layout/redbox_item_title.xml"
     },
     {
         "merged": "/home/martimfj/Dropbox/Insper Mileage/car-dashboard/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_ic_star_half_black_36dp.png.flat",
@@ -1305,7 +1305,7 @@
     },
     {
         "merged": "/home/martimfj/Dropbox/Insper Mileage/car-dashboard/android/app/build/intermediates/res/merged/debug/anim_catalyst_slide_down.xml.flat",
-        "source": "/home/martimfj/.gradle/caches/transforms-2/files-2.1/e1541b4f67a622f51199b37deb4dd86d/res/anim/catalyst_slide_down.xml"
+        "source": "/home/martimfj/.gradle/caches/transforms-2/files-2.1/a0f4e485d0e1b25d1f9efb4ea95ddeb4/res/anim/catalyst_slide_down.xml"
     },
     {
         "merged": "/home/martimfj/Dropbox/Insper Mileage/car-dashboard/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_btn_switch_to_on_mtrl_00001.9.png.flat",

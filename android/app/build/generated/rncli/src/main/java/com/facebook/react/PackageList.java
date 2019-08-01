@@ -17,6 +17,8 @@ import com.car_dashboard.R;
 import com.swmansion.gesturehandler.react.RNGestureHandlerPackage;
 // react-native-serialport
 import com.melihyarikkaya.rnserialport.RNSerialportPackage;
+// react-native-vector-icons
+import com.oblador.vectoricons.VectorIconsPackage;
 
 public class PackageList {
   private Application application;
@@ -51,7 +53,8 @@ public class PackageList {
     return new ArrayList<>(Arrays.<ReactPackage>asList(
       new MainReactPackage(),
       new RNGestureHandlerPackage(),
-      new RNSerialportPackage()
+      new RNSerialportPackage(),
+      new VectorIconsPackage()
     ));
   }
 }
