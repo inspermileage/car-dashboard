@@ -21,7 +21,7 @@ export default class Dashboard extends Component {
 		connected: false,
 		usbAttached: false,
 		data: {},
-		dataset: '5d14edc09e9b5e589c5c0e3d'
+		config: this.props.navigation.getParam('config', 'Null')
 	};
 
 	onUsbAttached() {
@@ -86,8 +86,10 @@ export default class Dashboard extends Component {
 
 			this.setState({ data: this.parsedToJSON(parsed) });
 
-			const dataset = this.state.dataset;
-			await api.post(`/data/${dataset}`, this.state.data);
+			await api.post(
+				`/data/${this.state.config.dataset}`,
+				this.state.data
+			);
 		}
 	}
 
@@ -153,9 +155,11 @@ export default class Dashboard extends Component {
 
 	render() {
 		console.disableYellowBox = true;
+
+		console.log();
 		return (
 			<View style={styles.container}>
-				<Text style={styles.paragraph}>
+				<Text style={styles.text}>
 					{this.state.data.accelerometer === undefined
 						? '0'
 						: this.state.data.accelerometer}{' '}
@@ -171,13 +175,11 @@ const styles = StyleSheet.create({
 		flex: 1,
 		backgroundColor: '#000000',
 		justifyContent: 'center',
-		padding: 8
+		alignItems: 'center'
 	},
-	paragraph: {
-		margin: 24,
-		fontSize: 48,
+	text: {
 		fontWeight: 'bold',
-		color: '#FFFFFF',
-		textAlign: 'center'
+		fontSize: 20,
+		color: '#FFFFFF'
 	}
 });

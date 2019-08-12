@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, useState } from 'react';
 
 import { StatusBar, StyleSheet } from 'react-native';
 import {
@@ -23,17 +23,27 @@ export default class Config extends Component {
 	};
 
 	state = {
-		selected2: undefined
+		speed: undefined,
+		time: undefined,
+		dataset: undefined,
+		cellphone: undefined
 	};
 
-	onValueChange2(value) {
-		this.setState({
-			selected2: value
-		});
-	}
 	componentDidMount() {
 		StatusBar.setHidden(true);
 	}
+
+	handleInit = () => {
+		this.props.navigation.navigate('Dashboard', {
+			config: {
+				speed: this.state.speed,
+				time: this.state.time,
+				dataset: this.state.dataset,
+				cellphone: this.state.cellphone
+			}
+		});
+	};
+
 	render() {
 		console.disableYellowBox = true;
 		return (
@@ -58,7 +68,13 @@ export default class Config extends Component {
 							name="speedometer"
 							style={{ color: '#3e3e3e' }}
 						/>
-						<Input placeholder="Velocidade média mínima (km/h)" />
+						<Input
+							placeholder="Velocidade média mínima (km/h)"
+							keyboardType="numeric"
+							placeholderTextColor="#999"
+							onChangeText={speed => this.setState({ speed })}
+							value={this.state.speed}
+						/>
 					</InputGroup>
 
 					<InputGroup>
@@ -67,7 +83,13 @@ export default class Config extends Component {
 							name="timer"
 							style={{ color: '#3e3e3e' }}
 						/>
-						<Input placeholder="Tempo de competição (minutos)" />
+						<Input
+							placeholder="Tempo de competição (minutos)"
+							keyboardType="numeric"
+							placeholderTextColor="#999"
+							onChangeText={time => this.setState({ time })}
+							value={this.state.time}
+						/>
 					</InputGroup>
 					<InputGroup>
 						<Icon
@@ -75,7 +97,14 @@ export default class Config extends Component {
 							name="database"
 							style={{ color: '#3e3e3e' }}
 						/>
-						<Input placeholder="nome_para_dataset" />
+						<Input
+							placeholder="nome_para_dataset"
+							autoCapitalize="none"
+							autoCorrect={false}
+							placeholderTextColor="#999"
+							onChangeText={dataset => this.setState({ dataset })}
+							value={this.state.dataset}
+						/>
 					</InputGroup>
 					<InputGroup>
 						<Icon
@@ -83,13 +112,21 @@ export default class Config extends Component {
 							name="phone"
 							style={{ color: '#3e3e3e' }}
 						/>
-						<Input placeholder="11 999217548" />
+						<Input
+							placeholder="11 999217548"
+							placeholderTextColor="#999"
+							keyboardType="numeric"
+							onChangeText={cellphone =>
+								this.setState({ cellphone })
+							}
+							value={this.state.cellphone}
+						/>
 					</InputGroup>
 				</Content>
 
 				<Footer>
 					<FooterTab>
-						<Button full success>
+						<Button full success onPress={this.handleInit}>
 							<H3 style={{ color: '#ffffff' }}>
 								Iniciar telemetria
 							</H3>
